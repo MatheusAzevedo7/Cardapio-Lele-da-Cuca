@@ -51,6 +51,42 @@ body {
     margin-top: -5px;
 }
 
+/* Caixa de aviso de funcionamento */
+.aviso-funcionamento {
+    background-color: var(--white);
+    border: 2px dashed var(--primary-pink);
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+}
+
+.aviso-funcionamento .aviso-titulo {
+    color: var(--dark-pink);
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.aviso-funcionamento p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: var(--text-brown);
+}
+
+.aviso-funcionamento .aviso-destaque {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    color: #444;
+    text-align: center;
+    font-weight: 500;
+}
+
 .filter-container {
     display: flex;
     justify-content: center;

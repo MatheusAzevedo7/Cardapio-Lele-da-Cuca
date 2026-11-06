@@ -12,6 +12,14 @@
         <div class="logo-badge">CONHEÇA</div>
         <h1>NOSSO CARDÁPIO</h1>
         <h2>doces e salgados</h2>
+        
+        <!-- Aviso de Funcionamento / Pronta-Entrega -->
+        <div class="aviso-funcionamento">
+            <p class="aviso-titulo">🕒 Horário e Funcionamento</p>
+            <p>🛍️ Pronta-Entrega: Disponível às Quintas e Sextas-feiras (Conforme disponibilidade).</p>
+            <p>📅 Demais Dias: Trabalhamos exclusivamente com encomendas.</p>
+            <p class="aviso-destaque">Quer saber quais delícias estão disponíveis hoje? Entre em contato conosco pelo WhatsApp e consulte as opções do dia!</p>
+        </div>
     </header>
 
     <!-- Filtros por Categoria -->
@@ -34,7 +42,7 @@
                 <img src="assets/img/bolo-2-amores.jpg" alt="Bolo 2 Amores">
                 <div class="card-info">
                     <h4>Bolo 2 Amores</h4>
-                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
+                    <p class="desc">Peso aproximado: 350g por fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo 2 Amores">
                         <button class="btn-acao" onclick="alterarQtd('Bolo 2 Amores', 25.00, -1)">-</button>
@@ -48,7 +56,7 @@
                 <img src="assets/img/bolo-morango-ninho.jpg" alt="Bolo de Morango com Ninho">
                 <div class="card-info">
                     <h4>Bolo de Morango com Ninho</h4>
-                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
+                    <p class="desc">Peso aproximado: 350g por fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Morango com Ninho">
                         <button class="btn-acao" onclick="alterarQtd('Bolo de Morango com Ninho', 25.00, -1)">-</button>
@@ -62,7 +70,7 @@
                 <img src="assets/img/bolo-nozes.jpg" alt="Bolo de Nozes com Doce de Leite">
                 <div class="card-info">
                     <h4>Bolo de Nozes com Doce de Leite</h4>
-                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
+                    <p class="desc">Peso aproximado: 350g por fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Nozes com Doce de Leite">
                         <button class="btn-acao" onclick="alterarQtd('Bolo de Nozes com Doce de Leite', 25.00, -1)">-</button>
@@ -76,7 +84,7 @@
                 <img src="assets/img/bolo-limao.jpg" alt="Bolo de Limão">
                 <div class="card-info">
                     <h4>Bolo de Limão</h4>
-                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
+                    <p class="desc">Peso aproximado: 350g por fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Limão">
                         <button class="btn-acao" onclick="alterarQtd('Bolo de Limão', 25.00, -1)">-</button>
@@ -90,7 +98,7 @@
                 <img src="assets/img/slice-cake.jpg" alt="Slice Cake +3 docinhos">
                 <div class="card-info">
                     <h4>Slice Cake +3 docinhos</h4>
-                    <p class="desc">Cada slice pesa +/- 150 gramas</p>
+                    <p class="desc">Peso aproximado: 150g por slice</p>
                     <span class="price">R$ 18,00</span>
                     <div class="controle-qtd" id="controle-Slice Cake +3 docinhos">
                         <button class="btn-acao" onclick="alterarQtd('Slice Cake +3 docinhos', 18.00, -1)">-</button>
@@ -422,7 +430,7 @@
             <div class="card">
                 <img src="assets/img/pao-calabresa.jpg" alt="Pão de Calabresa">
                 <div class="card-info">
-                    <h4>Pãozinho de Calabresa</h4>
+                    <h4>Pãozinho de Calabresa / Recheado</h4>
                     <span class="price">R$ 10,00</span>
                     <div class="controle-qtd" id="controle-Pãozinho de Calabresa">
                         <button class="btn-acao" onclick="alterarQtd('Pãozinho de Calabresa', 10.00, -1)">-</button>
@@ -435,12 +443,12 @@
             <div class="card">
                 <img src="assets/img/empadinha.jpg" alt="Empadinha">
                 <div class="card-info">
-                    <h4>Empadinha [Unidade]</h4>
+                    <h4>Empadinha (Unidade)</h4>
                     <span class="price">R$ 8,00</span>
-                    <div class="controle-qtd" id="controle-Empadinha">
-                        <button class="btn-acao" onclick="alterarQtd('Empadinha', 8.00, -1)">-</button>
-                        <span class="qtd-numero" id="qtd-Empadinha">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Empadinha', 8.00, 1)">+</button>
+                    <div class="controle-qtd" id="controle-Empadinha (Unidade)">
+                        <button class="btn-acao" onclick="alterarQtd('Empadinha (Unidade)', 8.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Empadinha (Unidade)">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Empadinha (Unidade)', 8.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -463,10 +471,10 @@
                 <div class="card-info">
                     <h4>Torta de Pão (250 gramas)</h4>
                     <span class="price">R$ 15,00</span>
-                    <div class="controle-qtd" id="controle-Torta de Pão">
-                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão', 15.00, -1)">-</button>
-                        <span class="qtd-numero" id="qtd-Torta de Pão">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão', 15.00, 1)">+</button>
+                    <div class="controle-qtd" id="controle-Torta de Pão (250 gramas)">
+                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão (250 gramas)', 15.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Torta de Pão (250 gramas)">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão (250 gramas)', 15.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -476,10 +484,10 @@
                 <div class="card-info">
                     <h4>Quibe Recheado (250 gramas)</h4>
                     <span class="price">R$ 20,00</span>
-                    <div class="controle-qtd" id="controle-Quibe Recheado">
-                        <button class="btn-acao" onclick="alterarQtd('Quibe Recheado', 20.00, -1)">-</button>
-                        <span class="qtd-numero" id="qtd-Quibe Recheado">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Quibe Recheado', 20.00, 1)">+</button>
+                    <div class="controle-qtd" id="controle-Quibe Recheado (250 gramas)">
+                        <button class="btn-acao" onclick="alterarQtd('Quibe Recheado (250 gramas)', 20.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Quibe Recheado (250 gramas)">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Quibe Recheado (250 gramas)', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
