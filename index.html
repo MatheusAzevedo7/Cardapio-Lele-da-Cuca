@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Online - Léle da Cuca</title>
+    <title>Cardápio Léle da Cuca</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header class="header">
         <div class="logo-badge">CONHEÇA</div>
         <h1>NOSSO CARDÁPIO</h1>
-        <h2>Doces e Salgados</h2>
+        <h2>doces e salgados</h2>
     </header>
 
     <!-- Filtros por Categoria -->
@@ -34,6 +34,7 @@
                 <img src="assets/img/bolo-2-amores.jpg" alt="Bolo 2 Amores">
                 <div class="card-info">
                     <h4>Bolo 2 Amores</h4>
+                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo 2 Amores">
                         <button class="btn-acao" onclick="alterarQtd('Bolo 2 Amores', 25.00, -1)">-</button>
@@ -47,6 +48,7 @@
                 <img src="assets/img/bolo-morango-ninho.jpg" alt="Bolo de Morango com Ninho">
                 <div class="card-info">
                     <h4>Bolo de Morango com Ninho</h4>
+                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Morango com Ninho">
                         <button class="btn-acao" onclick="alterarQtd('Bolo de Morango com Ninho', 25.00, -1)">-</button>
@@ -60,6 +62,7 @@
                 <img src="assets/img/bolo-nozes.jpg" alt="Bolo de Nozes com Doce de Leite">
                 <div class="card-info">
                     <h4>Bolo de Nozes com Doce de Leite</h4>
+                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Nozes com Doce de Leite">
                         <button class="btn-acao" onclick="alterarQtd('Bolo de Nozes com Doce de Leite', 25.00, -1)">-</button>
@@ -73,6 +76,7 @@
                 <img src="assets/img/bolo-limao.jpg" alt="Bolo de Limão">
                 <div class="card-info">
                     <h4>Bolo de Limão</h4>
+                    <p class="desc">Cada bolo pesa +/- 350 gramas a fatia</p>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Limão">
                         <button class="btn-acao" onclick="alterarQtd('Bolo de Limão', 25.00, -1)">-</button>
@@ -86,6 +90,7 @@
                 <img src="assets/img/slice-cake.jpg" alt="Slice Cake +3 docinhos">
                 <div class="card-info">
                     <h4>Slice Cake +3 docinhos</h4>
+                    <p class="desc">Cada slice pesa +/- 150 gramas</p>
                     <span class="price">R$ 18,00</span>
                     <div class="controle-qtd" id="controle-Slice Cake +3 docinhos">
                         <button class="btn-acao" onclick="alterarQtd('Slice Cake +3 docinhos', 18.00, -1)">-</button>
@@ -112,11 +117,11 @@
                 <img src="assets/img/bolo-nozes-1kg.jpg" alt="Bolo de Nozes 1kg">
                 <div class="card-info">
                     <h4>Bolo de Nozes (1kg)</h4>
-                    <span class="price">R$ 95,00</span>
+                    <span class="price">R$ 90,00</span>
                     <div class="controle-qtd" id="controle-Bolo de Nozes (1kg)">
-                        <button class="btn-acao" onclick="alterarQtd('Bolo de Nozes (1kg)', 95.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Bolo de Nozes (1kg)', 90.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Bolo de Nozes (1kg)">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Bolo de Nozes (1kg)', 95.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Bolo de Nozes (1kg)', 90.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -130,17 +135,17 @@
                 <img src="assets/img/bolo-gelado.jpg" alt="Bolo Gelado de Ninho">
                 <div class="card-info">
                     <h4>Bolo Gelado de Ninho</h4>
-                    <span class="price">R$ 12,00</span>
+                    <span class="price">R$ 15,00</span>
                     <div class="controle-qtd" id="controle-Bolo Gelado de Ninho">
-                        <button class="btn-acao" onclick="alterarQtd('Bolo Gelado de Ninho', 12.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Bolo Gelado de Ninho', 15.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Bolo Gelado de Ninho">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Bolo Gelado de Ninho', 12.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Bolo Gelado de Ninho', 15.00, 1)">+</button>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="assets/img/bolo-cenoura.jpg" alt="Mini Bolo de Cenoura">
+                <img src="assets/img/mini-bolo-cenoura.jpg" alt="Mini Bolo de Cenoura">
                 <div class="card-info">
                     <h4>Mini Bolo de Cenoura</h4>
                     <span class="price">R$ 15,00</span>
@@ -153,7 +158,7 @@
             </div>
 
             <div class="card">
-                <img src="assets/img/bolo-mesclado.jpg" alt="Mini Bolo Mesclado">
+                <img src="assets/img/mini-bolo-mesclado.jpg" alt="Mini Bolo Mesclado">
                 <div class="card-info">
                     <h4>Mini Bolo Mesclado</h4>
                     <span class="price">R$ 15,00</span>
@@ -187,11 +192,11 @@
                 <img src="assets/img/copo-morango.jpg" alt="Copo da Felicidade de Morango">
                 <div class="card-info">
                     <h4>Copo da Felicidade de Morango</h4>
-                    <span class="price">R$ 18,00</span>
+                    <span class="price">R$ 20,00</span>
                     <div class="controle-qtd" id="controle-Copo da Felicidade de Morango">
-                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Morango', 18.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Morango', 20.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Copo da Felicidade de Morango">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Morango', 18.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Morango', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -200,11 +205,11 @@
                 <img src="assets/img/copo-brigadeiro.jpg" alt="Copo da Felicidade de Brigadeiro">
                 <div class="card-info">
                     <h4>Copo da Felicidade de Brigadeiro</h4>
-                    <span class="price">R$ 18,00</span>
+                    <span class="price">R$ 20,00</span>
                     <div class="controle-qtd" id="controle-Copo da Felicidade de Brigadeiro">
-                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Brigadeiro', 18.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Brigadeiro', 20.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Copo da Felicidade de Brigadeiro">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Brigadeiro', 18.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Brigadeiro', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -213,11 +218,11 @@
                 <img src="assets/img/copo-maracuja.jpg" alt="Copo da Felicidade de Maracujá">
                 <div class="card-info">
                     <h4>Copo da Felicidade de Maracujá</h4>
-                    <span class="price">R$ 18,00</span>
+                    <span class="price">R$ 20,00</span>
                     <div class="controle-qtd" id="controle-Copo da Felicidade de Maracujá">
-                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Maracujá', 18.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Maracujá', 20.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Copo da Felicidade de Maracujá">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Maracujá', 18.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Copo da Felicidade de Maracujá', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -243,7 +248,7 @@
             <div class="card">
                 <img src="assets/img/morangoffee.jpg" alt="Morangoffee">
                 <div class="card-info">
-                    <h4>Morangoffee</h4>[cite: 4]
+                    <h4>Morangoffee</h4>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Morangoffee">
                         <button class="btn-acao" onclick="alterarQtd('Morangoffee', 25.00, -1)">-</button>
@@ -256,12 +261,12 @@
             <div class="card">
                 <img src="assets/img/torta-limao.jpg" alt="Torta de Limão">
                 <div class="card-info">
-                    <h4>Torta de Limão</h4>[cite: 4]
-                    <span class="price">R$ 22,00</span>
+                    <h4>Torta de Limão</h4>
+                    <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Torta de Limão">
-                        <button class="btn-acao" onclick="alterarQtd('Torta de Limão', 22.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Torta de Limão', 25.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Torta de Limão">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Torta de Limão', 22.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Torta de Limão', 25.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -269,7 +274,7 @@
             <div class="card">
                 <img src="assets/img/torta-holandesa.jpg" alt="Torta Holandesa">
                 <div class="card-info">
-                    <h4>Torta Holandesa</h4>[cite: 4]
+                    <h4>Torta Holandesa</h4>
                     <span class="price">R$ 25,00</span>
                     <div class="controle-qtd" id="controle-Torta Holandesa">
                         <button class="btn-acao" onclick="alterarQtd('Torta Holandesa', 25.00, -1)">-</button>
@@ -293,27 +298,40 @@
             </div>
 
             <div class="card">
-                <img src="assets/img/morango-cravejado.jpg" alt="Morango Cravejado">
+                <img src="assets/img/bombom-aberto.jpg" alt="Bombom de Morango Aberto">
                 <div class="card-info">
-                    <h4>Morango Cravejado / Aberto</h4>
-                    <span class="price">R$ 18,00</span>
-                    <div class="controle-qtd" id="controle-Morango Cravejado">
-                        <button class="btn-acao" onclick="alterarQtd('Morango Cravejado', 18.00, -1)">-</button>
-                        <span class="qtd-numero" id="qtd-Morango Cravejado">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Morango Cravejado', 18.00, 1)">+</button>
+                    <h4>Bombom de Morango Aberto</h4>
+                    <span class="price">R$ 20,00</span>
+                    <div class="controle-qtd" id="controle-Bombom de Morango Aberto">
+                        <button class="btn-acao" onclick="alterarQtd('Bombom de Morango Aberto', 20.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Bombom de Morango Aberto">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Bombom de Morango Aberto', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="assets/img/palha-italiana.jpg" alt="Palha Italiana de Brigadeiro">
+                <img src="assets/img/morango-cravejado.jpg" alt="Morango Cravejado">
                 <div class="card-info">
-                    <h4>Palha Italiana de Brigadeiro</h4>
+                    <h4>Morango Cravejado</h4>
+                    <span class="price">R$ 13,00</span>
+                    <div class="controle-qtd" id="controle-Morango Cravejado">
+                        <button class="btn-acao" onclick="alterarQtd('Morango Cravejado', 13.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Morango Cravejado">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Morango Cravejado', 13.00, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/palha-italiana.jpg" alt="Palha Italiana">
+                <div class="card-info">
+                    <h4>Palha Italiana (Brigadeiro / Leite Ninho)</h4>
                     <span class="price">R$ 20,00</span>
-                    <div class="controle-qtd" id="controle-Palha Italiana de Brigadeiro">
-                        <button class="btn-acao" onclick="alterarQtd('Palha Italiana de Brigadeiro', 20.00, -1)">-</button>
-                        <span class="qtd-numero" id="qtd-Palha Italiana de Brigadeiro">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Palha Italiana de Brigadeiro', 20.00, 1)">+</button>
+                    <div class="controle-qtd" id="controle-Palha Italiana">
+                        <button class="btn-acao" onclick="alterarQtd('Palha Italiana', 20.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Palha Italiana">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Palha Italiana', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -373,8 +391,8 @@
             <div class="card">
                 <img src="assets/img/docinhos.jpg" alt="Docinhos">
                 <div class="card-info">
-                    <h4>Docinhos (Caixa com 4 unidades)</h4>[cite: 5]
-                    <span class="price">R$ 15,00</span>[cite: 5]
+                    <h4>Docinhos (Caixa com 4 unidades)[cite: 5]</h4>
+                    <span class="price">R$ 15,00[cite: 5]</span>
                     <div class="controle-qtd" id="controle-Docinhos (Caixa c/ 4)">
                         <button class="btn-acao" onclick="alterarQtd('Docinhos (Caixa c/ 4)', 15.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Docinhos (Caixa c/ 4)">0</span>
@@ -391,8 +409,8 @@
             <div class="card">
                 <img src="assets/img/sanduiche.jpg" alt="Sanduíche Natural de Frango">
                 <div class="card-info">
-                    <h4>Sanduíche Natural de Frango</h4>[cite: 5]
-                    <span class="price">R$ 10,00</span>[cite: 5]
+                    <h4>Sanduíche Natural de Frango[cite: 5]</h4>
+                    <span class="price">R$ 10,00[cite: 5]</span>
                     <div class="controle-qtd" id="controle-Sanduíche Natural de Frango">
                         <button class="btn-acao" onclick="alterarQtd('Sanduíche Natural de Frango', 10.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Sanduíche Natural de Frango">0</span>
@@ -404,8 +422,8 @@
             <div class="card">
                 <img src="assets/img/pao-calabresa.jpg" alt="Pão de Calabresa">
                 <div class="card-info">
-                    <h4>Pãozinho de Calabresa / Recheado</h4>[cite: 5]
-                    <span class="price">R$ 10,00</span>[cite: 5]
+                    <h4>Pãozinho de Calabresa / Recheado[Cite: 5]</h4>
+                    <span class="price">R$ 10,00[Cite: 5]</span>
                     <div class="controle-qtd" id="controle-Pãozinho de Calabresa">
                         <button class="btn-acao" onclick="alterarQtd('Pãozinho de Calabresa', 10.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Pãozinho de Calabresa">0</span>
@@ -417,8 +435,8 @@
             <div class="card">
                 <img src="assets/img/empadinha.jpg" alt="Empadinha">
                 <div class="card-info">
-                    <h4>Empadinha</h4>[cite: 5]
-                    <span class="price">R$ 8,00</span>[cite: 5]
+                    <h4>Empadinha[Cite: 5]</h4>
+                    <span class="price">R$ 8,00[Cite: 5]</span>
                     <div class="controle-qtd" id="controle-Empadinha">
                         <button class="btn-acao" onclick="alterarQtd('Empadinha', 8.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Empadinha">0</span>
@@ -431,11 +449,11 @@
                 <img src="assets/img/mini-pizza.jpg" alt="Mini Pizza">
                 <div class="card-info">
                     <h4>Mini Pizza</h4>
-                    <span class="price">R$ 8,00</span>
+                    <span class="price">R$ 15,00</span>
                     <div class="controle-qtd" id="controle-Mini Pizza">
-                        <button class="btn-acao" onclick="alterarQtd('Mini Pizza', 8.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Mini Pizza', 15.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Mini Pizza">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Mini Pizza', 8.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Mini Pizza', 15.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -443,12 +461,25 @@
             <div class="card">
                 <img src="assets/img/torta-pao.jpg" alt="Torta de Pão">
                 <div class="card-info">
-                    <h4>Torta de Pão de Frango / Fria</h4>
-                    <span class="price">R$ 20,00</span>
+                    <h4>Torta de Pão (250 gramas)</h4>
+                    <span class="price">R$ 15,00</span>
                     <div class="controle-qtd" id="controle-Torta de Pão">
-                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão', 20.00, -1)">-</button>
+                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão', 15.00, -1)">-</button>
                         <span class="qtd-numero" id="qtd-Torta de Pão">0</span>
-                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão', 20.00, 1)">+</button>
+                        <button class="btn-acao" onclick="alterarQtd('Torta de Pão', 15.00, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/quibe-recheado.jpg" alt="Quibe Recheado">
+                <div class="card-info">
+                    <h4>Quibe Recheado (260 gramas)</h4>
+                    <span class="price">R$ 20,00</span>
+                    <div class="controle-qtd" id="controle-Quibe Recheado">
+                        <button class="btn-acao" onclick="alterarQtd('Quibe Recheado', 20.00, -1)">-</button>
+                        <span class="qtd-numero" id="qtd-Quibe Recheado">0</span>
+                        <button class="btn-acao" onclick="alterarQtd('Quibe Recheado', 20.00, 1)">+</button>
                     </div>
                 </div>
             </div>
@@ -474,11 +505,23 @@
             <div id="lista-carrinho" class="lista-carrinho"></div>
 
             <div class="form-pedido">
-                <label for="observacao">Observações (ex: ponto, retirada, restrições):</label>
-                <textarea id="observacao" placeholder="Ex: Caprichar na embalagem, etc..."></textarea>
-                
                 <label for="nome-cliente">Seu Nome:</label>
                 <input type="text" id="nome-cliente" placeholder="Digite seu nome">
+
+                <label>Forma de Recebimento:</label>
+                <div class="opcoes-entrega">
+                    <label><input type="radio" name="tipo-pedido" value="Retirar no Local" checked onclick="toggleEndereco(false)"> Retirar no Local</label>
+                    <label><input type="radio" name="tipo-pedido" value="Entrega" onclick="toggleEndereco(true)"> Quero Entrega</label>
+                </div>
+
+                <div id="campo-endereco" style="display: none;">
+                    <label for="endereco-cliente">Endereço Completo:</label>
+                    <input type="text" id="endereco-cliente" placeholder="Rua, Número, Bairro, Ponto de Referência">
+                    <p class="aviso-taxa">⚠️ Será cobrada taxa de entrega dependendo da sua localização.</p>
+                </div>
+
+                <label for="observacao">Observações:</label>
+                <textarea id="observacao" placeholder="Ex: Caprichar na embalagem..."></textarea>
             </div>
 
             <button onclick="enviarWhatsApp()" class="btn-whatsapp">Enviar Pedido no WhatsApp 📲</button>

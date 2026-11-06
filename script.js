@@ -32,7 +32,6 @@ function alterarQtd(nome, preco, delta) {
 }
 
 function atualizarTelas() {
-    // Atualizar contadores visuais em cada card do cardápio
     document.querySelectorAll('.controle-qtd').forEach(controle => {
         let nomeProduto = controle.id.replace('controle-', '');
         let item = carrinho.find(i => i.name === nomeProduto);
@@ -43,7 +42,6 @@ function atualizarTelas() {
         }
     });
 
-    // Atualizar barra inferior do carrinho flutuante
     let qtdTotal = 0;
     let valorTotal = 0;
 
@@ -77,6 +75,11 @@ function abrirModal() {
     document.getElementById('modal-carrinho').style.display = 'block';
 }
 
+function toggleEndereco(mostrar) {
+    let campoEndereco = document.getElementById('campo-endereco');
+    campoEndereco.style.display = mostrar ? 'block' : 'none';
+}
+
 function removerItemDoCarrinho(nome) {
     carrinho = carrinho.filter(item => item.name !== nome);
     atualizarTelas();
@@ -89,6 +92,8 @@ function fecharModal() {
 
 function enviarWhatsApp() {
     let nomeCliente = document.getElementById('nome-cliente').value.trim();
+    let tipoPedido = document.querySelector('input[name="tipo-pedido"]:checked').value;
+    let enderecoCliente = document.getElementById('endereco-cliente').value.trim();
     let observacao = document.getElementById('observacao').value.trim();
 
     if (!nomeCliente) {
@@ -96,7 +101,21 @@ function enviarWhatsApp() {
         return;
     }
 
-    let mensagem = `*Novo Pedido - Cardápio Online*\n\n*Cliente:* ${nomeCliente}\n\n*Itens do Pedido:*\n`;
+    if (tipoPedido === 'Entrega' && !enderecoCliente) {
+        alert('Por favor, digite o endereço completo para entrega.');
+        return;
+    }
+
+    let mensagem = `*Novo Pedido - Cardápio Léle da Cuca*\n\n`;
+    mensagem += `👤 *Cliente:* ${nomeCliente}\n`;
+    mensagem += `📦 *Tipo:* ${tipoPedido}\n`;
+
+    if (tipoPedido === 'Entrega') {
+        mensagem += `📍 *Endereço:* ${enderecoCliente}\n`;
+        mensagem += `⚠️ _(Taxa de entrega a calcular conforme a localização)_\n`;
+    }
+
+    mensagem += `\n*Itens do Pedido:*\n`;
     let valorTotal = 0;
 
     carrinho.forEach(item => {
@@ -104,10 +123,14 @@ function enviarWhatsApp() {
         valorTotal += item.price * item.qtd;
     });
 
-    mensagem += `\n*Total:* R$ ${valorTotal.toFixed(2).replace('.', ',')}`;
+    mensagem += `\n💰 *Subtotal dos Produtos:* R$ ${valorTotal.toFixed(2).replace('.', ',')}`;
+
+    if (tipoPedido === 'Entrega') {
+        mensagem += `\n_(Valor total sem taxa de entrega)_`;
+    }
 
     if (observacao) {
-        mensagem += `\n\n*Observações:* ${observacao}`;
+        mensagem += `\n\n📝 *Observações:* ${observacao}`;
     }
 
     let telefone = "5527995734819"; // Número da Manuela
